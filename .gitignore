@@ -21,6 +21,7 @@ BepInEx/*
 
 # BepInEx config ignore list
 # BepInEx/config/BepInEx.cfg
+# BepInEx/config/com.fika.core.cfg
 # BepInEx/config/com.bepis.bepinex.configurationmanager.cfg
 
 # mod ignore list
