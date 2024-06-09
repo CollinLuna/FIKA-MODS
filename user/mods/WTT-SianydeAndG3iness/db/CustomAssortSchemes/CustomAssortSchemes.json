@@ -1,0 +1,262 @@
+{
+    "MECHANIC": {
+		"items": [
+			{
+				"_id": "traderhkg3",
+				"_tpl": "664274a4d2e5fe0439d545a6",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"StackObjectsCount": 99,
+					"Repairable": {
+						"MaxDurability": 100,
+						"Durability": 100
+					},
+					"FireMode": {
+						"FireMode": "single"
+					}
+				}
+			},
+            {
+				"_id": "traderpsg",
+				"_tpl": "664274a4d2e5fe0439d545a6",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"StackObjectsCount": 99,
+					"Repairable": {
+						"MaxDurability": 100,
+						"Durability": 100
+					},
+					"FireMode": {
+						"FireMode": "single"
+					}
+				}
+			},
+            {
+				"_id": "traderhk11e",
+				"_tpl": "664274afd9fe3879695d90e9",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"StackObjectsCount": 99,
+					"Repairable": {
+						"MaxDurability": 100,
+						"Durability": 100
+					},
+					"FireMode": {
+						"FireMode": "single"
+					}
+				}
+			},
+            {
+				"_id": "66459a525ae44148e646bdd3",
+				"_tpl": "66427485cd48e6321fbddfef",
+				"parentId": "traderhkg3",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "66459a650364ca93b11ad528",
+				"_tpl": "g3barrelmed",
+				"parentId": "traderhkg3",
+				"slotId": "mod_barrel"
+			},
+            {
+				"_id": "66459a759a0d6aefb49b7613",
+				"_tpl": "g3handguardsgr",
+				"parentId": "66459a650364ca93b11ad528",
+				"slotId": "mod_handguard"
+			},
+			{
+				"_id": "66459a7feb6cc618fbfd4bd5",
+				"_tpl": "g3stockfixedgr",
+				"parentId": "traderhkg3",
+				"slotId": "mod_stock"
+			},
+            {
+				"_id": "66459a84648159a41dcbdaf3",
+				"_tpl": "g3pgripgr",
+				"parentId": "traderhkg3",
+				"slotId": "mod_pistolgrip"
+			},
+			{
+				"_id": "66459a8ae40ce2b1456420b5",
+				"_tpl": "g3sightr",
+				"parentId": "traderhkg3",
+				"slotId": "mod_sight_rear",
+				"upd": {
+					"Sight": {
+						"ScopesCurrentCalibPointIndexes": [
+							0
+						],
+						"ScopesSelectedModes": [
+							0
+						],
+						"SelectedScope": 0
+					}
+				}
+			},
+			{
+				"_id": "66459a98f4015e75f4691bf3",
+				"_tpl": "5b7d693d5acfc43bca706a3d",
+				"parentId": "66459a650364ca93b11ad528",
+				"slotId": "mod_muzzle"
+			},
+
+
+            {
+				"_id": "6645ae8861c57ca35a890a75",
+				"_tpl": "66427485cd48e6321fbddfef",
+				"parentId": "traderpsg",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "6645ae8e6a0500f8fe5bd1ef",
+				"_tpl": "g3barrellong",
+				"parentId": "traderpsg",
+				"slotId": "mod_barrel"
+			},
+            {
+				"_id": "6645ae9fcb20a8c1d3e22408",
+				"_tpl": "g3handguardpsgl",
+				"parentId": "6645ae8e6a0500f8fe5bd1ef",
+				"slotId": "mod_handguard"
+			},
+			{
+				"_id": "6645aea5c5b24c2f0e515985",
+				"_tpl": "g3stockpsg",
+				"parentId": "traderpsg",
+				"slotId": "mod_stock"
+			},
+            {
+				"_id": "6645aeacb903eb93e96a6ae8",
+				"_tpl": "g3pgrippsg",
+				"parentId": "traderpsg",
+				"slotId": "mod_pistolgrip"
+			},
+            {
+				"_id": "6645aeb193ebd60c433c817a",
+				"_tpl": "g3mounthigh",
+				"parentId": "traderpsg",
+				"slotId": "mod_scope"
+			},
+			{
+				"_id": "6645aeb87bbcc2a48f0e07ed",
+				"_tpl": "g3sightr",
+				"parentId": "traderpsg",
+				"slotId": "mod_sight_rear",
+				"upd": {
+					"Sight": {
+						"ScopesCurrentCalibPointIndexes": [
+							0
+						],
+						"ScopesSelectedModes": [
+							0
+						],
+						"SelectedScope": 0
+					}
+				}
+			},
+			{
+				"_id": "6645aebfa13b6314ea2cf9a8",
+				"_tpl": "5b7d693d5acfc43bca706a3d",
+				"parentId": "6645ae8e6a0500f8fe5bd1ef",
+				"slotId": "mod_muzzle"
+			},
+
+
+            {
+				"_id": "66459d16403d836aa75b35d2",
+				"_tpl": "6642749650f358f59ab6b622",
+				"parentId": "traderhk11e",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "66459d209e02f7e753fd377c",
+				"_tpl": "hk21barrel",
+				"parentId": "traderhk11e",
+				"slotId": "mod_barrel"
+			},
+            {
+				"_id": "66459d2ddf43b492489985d4",
+				"_tpl": "hk21handguard",
+				"parentId": "66459d209e02f7e753fd377c",
+				"slotId": "mod_handguard"
+			},
+			{
+				"_id": "66459d353426bf39c3a40c2b",
+				"_tpl": "hk21stock",
+				"parentId": "traderhk11e",
+				"slotId": "mod_stock"
+			},
+            {
+				"_id": "66459d45431f0786eacbc271",
+				"_tpl": "g3pgripblk",
+				"parentId": "traderhk11e",
+				"slotId": "mod_pistolgrip"
+			},
+			{
+				"_id": "66459d53322c4d51102b653e",
+				"_tpl": "g3sightr",
+				"parentId": "traderhk11e",
+				"slotId": "mod_sight_rear",
+				"upd": {
+					"Sight": {
+						"ScopesCurrentCalibPointIndexes": [
+							0
+						],
+						"ScopesSelectedModes": [
+							0
+						],
+						"SelectedScope": 0
+					}
+				}
+			},
+			{
+				"_id": "66459d58f630fd0890c6e324",
+				"_tpl": "5b7d693d5acfc43bca706a3d",
+				"parentId": "66459d209e02f7e753fd377c",
+				"slotId": "mod_muzzle"
+			},
+            {
+                "_id": "66459d5cadc5178f808f46f7",
+                "_tpl": "5c1cd46f2e22164bef5cfedb",
+                "parentId": "66459d2ddf43b492489985d4",
+                "slotId": "mod_foregrip"
+            }
+        ],
+        "barter_scheme": {
+			"traderhkg3": [
+				[
+					{
+						"count": 104362,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+            "traderpsg": [
+				[
+					{
+						"count": 127431,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+            "traderhk11e": [
+				[
+					{
+						"count": 124652,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			]
+		},
+		"loyal_level_items": {
+			"traderhkg3": 2,
+            "traderpsg": 3,
+            "traderhk11e": 4
+		}
+    }
+
+
+}

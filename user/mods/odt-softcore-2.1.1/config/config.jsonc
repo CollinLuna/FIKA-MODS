@@ -73,7 +73,7 @@
 	},
 	"EconomyOptions": {
 		// Master toggle for all economy options below
-		"enabled": true,
+		"enabled": false,
 		"Disable_Flea_Market_Completely": {
 			// Completely disable flea market for true HARDCORE experience. Still allows you to use the interface and see trader offers. Overwrites all other flea changes below.
 			"disable": false
@@ -98,7 +98,7 @@
 			},
 			"Enable_Marked_Keys": {
 				// Marked keys are available on flea market.
-				"enabled": true,
+				"enabled": false,
 				"PriceMultiplier": 2
 			}
 		},
@@ -107,21 +107,21 @@
 			"enabled": true,
 			"Cash_Offers_Percentage": {
 				// Allow small, random percentage of listings to be buyable for cash. 0 is true barter-only ecomnomy (except the cheapest items like AA battery, but this is a SPT-AKI limitation), I'd say this is a preferred way to play with this mod, but it might be a little too hard sometimes. 5% seems like a fine number that makes life just a little bit easier to avoid item deadlocks. Recommendation: 0 to 15.
-				"value": 20
+				"value": 10
 			},
 			"Barter_Price_Variance": {
 				// ± percent of price variance between item listing and it's barter value. Bigger number - more wild and varied random trades, eg you can see a Defiblirator (that has 224k value) offered for a Lion (162k value) or a Tank Battery (330k value). This CORE feature makes the whole mod tick, that what makes it fun, random and engaging and stimulates hustling in a war broken society. You can get lucky, and get a great deal, or you might desperately need an item that is way overvalued but you only have the expensive item that it is asked for. Also more variance means it's easier to encounter an offer you have an item for and easier trades. Recomendation: 20-50
-				"value": 40
+				"value": 50
 			},
 			"offerItemCount": {
 				// Max 20 different offers of an item. Too low of a number breaks AKI server for some reason, with constant client errors on completed trades. More random trades variance anyway, this is fun.
-				"min": 10,
-				"max": 20
+				"min": 5,
+				"max": 10
 			},
 			"nonStackableCount": {
 				// Max 2 items availiable per individual offer. Feels nice. Loot more stuff, it might come in handy.
 				"min": 1,
-				"max": 3
+				"max": 2
 			},
 			"itemCountMax": {
 				// Limits maximum number of items asked for barter. Default is 2 for 1 barters max.
@@ -134,15 +134,15 @@
 		},
 		"Disable_Selling_on_Flea": {
 			// NOT RECOMMENDED TO CHANGE, use TraderChanges options below. If option is CHANGED below, it will ALLOW selling on flea market (default is NO SELLING ON FLEA). Also increases fleamarket reputation gain by a factior of 10. Will allow you to sell weapons and other blocked by Softcore items like in Vanilla. Not playtested and balanced around this, not recommended to enable. Also SPT 3.5.0 has wierd default configuration for time, will have to investigete further.
-			"sellingDisabled": true
+			"sellingDisabled": false
 		},
 		"Fleamarket_Opened_at_Level": {
 			// PMC level flea market opens at.
-			"value": 10
+			"value": 15
 		},
 		"Flea_Prices_Increased": {
 			// Slightly increase flea market prices to stimulate looting and crafting, instead of buying everything on flea. With barter economy and variance enabled you still get a lot of great trades lower then actual item value. Hustle!
-			"multiplier": 1.3
+			"multiplier": 2.0
 		},
 		"Flea_Pristine_Items": {
 			// Only pristine condition items are offered on flea.
@@ -249,7 +249,7 @@
 		},
 		"Reshala_Always_Has_GoldenTT": {
 			// Reshala always has his Golden TT.
-			"enabled": true
+			"enabled": false
 		},
 		"Bigger_Ammo_Stacks": {
 			// Bigger Ammo Stacks x10

@@ -1,0 +1,846 @@
+{
+	"663cf1da2496a8e7b0b71759": {
+		"itemTplToClone": "5a7ae0c351dfba0017554310",
+		"parentId": "5447b5cf4bdc2d65278b4567",
+		"handbookParentId": "5b5f792486f77447ed5636b3",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "weapon_wilsoncombatedcx9.bundle",
+				"rcid": ""
+			},
+			"ExaminedByDefault": true,
+			"defMagType": "663cf2baeb3d77e14be4fcb8",
+			"defAmmo": "58864a4f2459770fcc257101",
+			"Ergonomics": 108,
+			"RecoilForceBack": 240,
+			"RecoilForceUp": 285,
+			"BaseMalfunctionChance": 0.1555,
+			"Chambers": [
+				{
+					"_id": "663cf2ad988a62f7a4c5b9c8",
+					"_mergeSlotWithChildren": false,
+					"_name": "patron_in_weapon",
+					"_parent": "663cf1da2496a8e7b0b71759",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5efb0da7a29a85116f6ea05f",
+									"5c3df7d588a4501f290594e5",
+									"58864a4f2459770fcc257101",
+									"56d59d3ad2720bdb418b4577",
+									"5c925fa22e221601da359b7b",
+									"5a3c16fe86f77452b62de32a",
+									"5efb0e16aeb21837e749c7ff",
+									"5c0d56a986f774449d5de529",
+									"64b7bbb74b75259c590fa897"
+								]
+							}
+						]
+					},
+					"_proto": "55d4af244bdc2d962f8b4571",
+					"_required": false
+				}
+			],
+			"ammoCaliber": "Caliber9x19PARA",
+			"Slots": [
+				{
+					"_id": "5f36a0e5fbf956000b716b67",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_barrel",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"663cf411c5d5feff1b25419e"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "5f36a0e5fbf956000b716b68",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_pistol_grip",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"663cf45b1004c6a00b96304b"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "5f36a0e5fbf956000b716b69",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_reciever",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"663cf38456e3019763642e64"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "5f36a0e5fbf956000b716b6a",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_magazine",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"AnimationIndex": 0,
+								"Filter": [
+									"663cf2baeb3d77e14be4fcb8"
+								]
+							}
+						]
+					},
+					"_proto": "55d30c394bdc2dae468b4577",
+					"_required": false
+				},
+				{
+					"_id": "5f36a0e5fbf956000b716b6b",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_trigger",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"663cf485b3f099cff7175526"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "5f36a0e5fbf956000b716b6c",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_hammer",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5f3e76d86cda304dcc634054",
+									"5ef35f46382a846010715a96",
+									"5ef35d2ac64c5d0dfc0571b0",
+									"5ef35bc243cb350a955a7ccd",
+									"663cf4a5156c382c1297331c"
+								
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "5f36a0e5fbf956000b716b6d",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_catch",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"663cf2edb9aad1223a8f3be6"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "5f36a0e5fbf956000b716b6e",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_tactical",
+					"_parent": "5f36a0e5fbf956000b716b65",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5a800961159bd4315e3a1657",
+									"5cc9c20cd7f00c001336c65d",
+									"5d2369418abbc306c62e0c80",
+									"5b07dd285acfc4001754240d",
+									"56def37dd2720bec348b456a",
+									"5a7b483fe899ef0016170d15",
+									"5a5f1ce64f39f90b401987bc",
+									"560d657b4bdc2da74d8b4572",
+									"5a7b4900e899ef197b331a2a",
+									"6272370ee4013c5d7e31f418",
+									"6272379924e29f06af4d5ecb"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				}
+			]
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 9x19mm Handgun",
+				"shortName": "EDC X9",
+				"description": "The Wilson Combat X-frame is a high-capacity 9mm 1911 frame that is similar in size to a traditional compact, single-stack 1911.  The X-frame is machined at Wilson Combat from T6-7075 aluminum and accepts a high-capacity magazine with a grip that is smaller in circumference than a standard 1911 while retaining traditional 1911 controls. "
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 30000,
+		"handbookPriceRoubles": 6500,
+		"addtoTraders": false,
+		"traderId": "SKIER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 1,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 250
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_DEAD_SCAV",
+				"Probability": 150
+			}
+		],
+		"masteries": true,
+		"masterySections": [
+			{
+				"Level2": 75,
+        "Level3": 100,
+				"Name": "m1911",
+				"Templates": [
+					"663cf1da2496a8e7b0b71759"
+				]
+			}
+		],
+		"addweaponpreset": true,
+		"weaponpresets": [
+			{
+				"_changeWeaponName": false,
+				"_encyclopedia": "663cf1da2496a8e7b0b71759",
+				"_id": "65e7e44d01001ac024072c04",
+				"_items": [
+					{
+						"_id": "83b10b00f400bd50e96ee3be",
+						"_tpl": "663cf1da2496a8e7b0b71759",
+						"upd": {
+							"Repairable": {
+								"MaxDurability": 100,
+								"Durability": 100
+							},
+							"FireMode": {
+								"FireMode": "single"
+							}
+						}
+					},
+					{
+						"_id": "84a3fb3bce98e4120735ebdf",
+						"_tpl": "663cf411c5d5feff1b25419e",
+						"parentId": "83b10b00f400bd50e96ee3be",
+						"slotId": "mod_barrel"
+					},
+					{
+						"_id": "c0c38a3996c065eaa9007d4d",
+						"_tpl": "663cf45b1004c6a00b96304b",
+						"parentId": "83b10b00f400bd50e96ee3be",
+						"slotId": "mod_pistol_grip"
+					},
+					{
+						"_id": "70c75f694114f0c629cc311d",
+						"_tpl": "663cf38456e3019763642e64",
+						"parentId": "83b10b00f400bd50e96ee3be",
+						"slotId": "mod_reciever"
+					},
+					{
+						"_id": "2c86a37d60db133708813192",
+						"_tpl": "663cf2baeb3d77e14be4fcb8",
+						"parentId": "83b10b00f400bd50e96ee3be",
+						"slotId": "mod_magazine"
+					},
+					{
+						"_id": "e40f529f7677085f00a92c3d",
+						"_tpl": "663cf485b3f099cff7175526",
+						"parentId": "83b10b00f400bd50e96ee3be",
+						"slotId": "mod_trigger"
+					},
+					{
+						"_id": "f388990940860a27bdc6b8b3",
+						"_tpl": "663cf4a5156c382c1297331c",
+						"parentId": "83b10b00f400bd50e96ee3be",
+						"slotId": "mod_hammer"
+					},
+					{
+						"_id": "8e7739c319d32541a54c332a",
+						"_tpl": "663cf2edb9aad1223a8f3be6",
+						"parentId": "83b10b00f400bd50e96ee3be",
+						"slotId": "mod_catch"
+					},
+					{
+						"_id": "65b3280678ed5529f2146f45",
+						"_tpl": "663cf42c23f97fae3855361c",
+						"parentId": "70c75f694114f0c629cc311d",
+						"slotId": "mod_sight_front",
+						"upd": {
+							"Sight": {
+								"ScopesCurrentCalibPointIndexes": [
+									0
+								],
+								"ScopesSelectedModes": [
+									0
+								],
+								"SelectedScope": 0
+							}
+						}
+					},
+					{
+						"_id": "9dfc927a7028245b5d791fc8",
+						"_tpl": "663cf442509df39323384184",
+						"parentId": "70c75f694114f0c629cc311d",
+						"slotId": "mod_sight_rear",
+						"upd": {
+							"Sight": {
+								"ScopesCurrentCalibPointIndexes": [
+									0
+								],
+								"ScopesSelectedModes": [
+									0
+								],
+								"SelectedScope": 0
+							}
+						}
+					}
+				],
+				"_name": "EDCX9",
+				"_parent": "83b10b00f400bd50e96ee3be",
+				"_type": "Preset"
+			}
+		]
+	},
+	"663cf411c5d5feff1b25419e": {
+		"itemTplToClone": "5f3e7801153b8571434a924c",
+		"parentId": "555ef6e44bdc2de9068b457e",
+		"handbookParentId": "5b5f75c686f774094242f19f",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_barrel.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"Recoil": "-4",
+			"Ergonomics": "-1",
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 4-Inch Pistol Barrel",
+				"shortName": "EDC X9",
+				"description": "A 4-inch barrel for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_barrel"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 4090,
+		"handbookPriceRoubles": 4090,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf38456e3019763642e64": {
+		"itemTplToClone": "5f3e7823ddc4f03b010e2045",
+		"parentId": "55818a304bdc2db5418b457d",
+		"handbookParentId": "5b5f764186f77447ec5d7714",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_slide.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"Ergonomics": 7,
+			"Slots": [
+				{
+					"_id": "663cf3d0a2d627f299fb7be0",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_sight_front",
+					"_parent": "663cf38456e3019763642e64",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"663cf42c23f97fae3855361c"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "663cf3d85a393065c184ec09",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_sight_rear",
+					"_parent": "663cf38456e3019763642e64",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"663cf442509df39323384184"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				}
+			],
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 Pistol Slide",
+				"shortName": "EDC X9",
+				"description": "Pistol slide for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_receiver"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 6200,
+		"handbookPriceRoubles": 6200,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf42c23f97fae3855361c": {
+		"itemTplToClone": "5f3e78a7fbf956000b716b8e",
+		"parentId": "55818ac54bdc2d5b648b456e",
+		"handbookParentId": "5b5f746686f77447ec5d7708",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_fs.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 Front Pistol Sight",
+				"shortName": "EDC X9",
+				"description": "Front pistol sight for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_sight_front"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 450,
+		"handbookPriceRoubles": 450,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf2baeb3d77e14be4fcb8": {
+		"itemTplToClone": "56d59948d2720bb7418b4582",
+		"parentId": "5448bc234bdc2d3c308b4569",
+		"handbookParentId": "5b5f754a86f774094242f19b",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_mag.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "yellow",
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat 9x19mm 15-Round EDC X9 Magazine",
+				"shortName": "EDC X9",
+				"description": "A 15-round 9x19mm magazine for the Wilson Combat EDC X9 pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_magazine"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 2000,
+		"handbookPriceRoubles": 2000,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf442509df39323384184": {
+		"itemTplToClone": "5f3e7897ddc4f03b010e204a",
+		"parentId": "55818ac54bdc2d5b648b456e",
+		"handbookParentId": "5b5f746686f77447ec5d7708",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_rs.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 Rear Pistol Sight",
+				"shortName": "EDC X9",
+				"description": "Rear pistol sight for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 450,
+		"handbookPriceRoubles": 450,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf2edb9aad1223a8f3be6": {
+		"itemTplToClone": "5f3e777688ca2d00ad199d25",
+		"parentId": "5a74651486f7744e73386dd1",
+		"handbookParentId": "5b5f74cc86f77447ec5d770a",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_catch.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"Ergonomics": 3,
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 Slide Lock",
+				"shortName": "EDC X9",
+				"description": "Slide lock for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_catch"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 500,
+		"handbookPriceRoubles": 500,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf4a5156c382c1297331c": {
+		"itemTplToClone": "5f3e76d86cda304dcc634054",
+		"parentId": "5a74651486f7744e73386dd1",
+		"handbookParentId": "5b5f74cc86f77447ec5d770a",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_hammer.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 Hammer",
+				"shortName": "EDC X9",
+				"description": "Hammer for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"mod_hammer"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 650,
+		"handbookPriceRoubles": 650,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf485b3f099cff7175526": {
+		"itemTplToClone": "5f3e772a670e2a7b01739a52",
+		"parentId": "5a74651486f7744e73386dd1",
+		"handbookParentId": "5b5f74cc86f77447ec5d770a",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_trigger.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 Trigger",
+				"shortName": "EDC X9",
+				"description": "Trigger for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_trigger"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 400,
+		"handbookPriceRoubles": 400,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"663cf45b1004c6a00b96304b": {
+		"itemTplToClone": "5e81c6bf763d9f754677beff",
+		"parentId": "55818a684bdc2ddd698b456d",
+		"handbookParentId": "5b5f761f86f774094242f1a1",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "wilsonedcx9_grip.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"Ergonomics": 6,
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Wilson Combat EDC X9 Pistol Grip",
+				"shortName": "EDC X9",
+				"description": "Texturized combat grip for the Wilson Combat EDC X9 9x19mm pistol."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_pistol_grip"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 700,
+		"handbookPriceRoubles": 700,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	}
+}

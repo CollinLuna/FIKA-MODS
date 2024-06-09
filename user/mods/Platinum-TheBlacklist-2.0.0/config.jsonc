@@ -1,0 +1,551 @@
+{
+  // Main feature of the mod, set to true to disable blacklist, false to keep it enabled. Other parts of the mod still applies however. Default true.
+  "disableBsgBlacklist": false,
+
+  // Make cheap offers sell faster. Default true.
+  "enableFasterSales": true,
+
+  // Reduces the number of offers and quantities per offer to make the flea experience more hardcore. Highly recommend to enable but default is false.
+  "enableScarceOffers": false,
+
+  // Adds an extra offer for your current flea market rating bracket. So a new account at level 15 can create 3 offers instead of 2. Default is false. Extra amount is configurable in advancedConfigs.
+  "addExtraOfferSlot": false,
+
+  // Balances the flea price of all ammo types, not just the blacklisted ammo types. Can be useful if you find some ammo prices are unbalanced, this generally makes them very balanced for what they do. Default false.
+  "useBalancedPricingForAllAmmo": false,
+
+  // Multiplies the price of all blacklisted items that are now available. Default 1.
+  "blacklistedItemPriceMultiplier": 2,
+
+  // Multiplies the price of all blacklisted ammo in addition to the `blacklistedItemPriceMultiplier` setting. Default 1.
+  "blacklistedAmmoAdditionalPriceMultiplier": 2,
+
+  // You can manually add flea prices to items, set a multiplier to their existing price or blacklist them entirely.
+  "customItemConfigs": [
+    {
+      // Dogtag BEAR
+      "itemId": "59f32bb586f774757e1e8442",
+      "blacklisted": true
+    },
+    {
+      // Dogtag USEC
+      "itemId": "59f32c3b86f77472a31742f0",
+      "blacklisted": true
+    },
+    {
+      // 5.11 Tactical Hexgrid plate carrier
+      "itemId": "5fd4c474dd870108a754b241",
+      "blacklisted": true
+    },
+    {
+      // 6B13 M assault armor (Killa Edition)
+      "itemId": "5c0e541586f7747fa54205c9",
+      "blacklisted": true
+    },
+    {
+      // BNTI Gzhel-K body armor
+      "itemId": "5ab8e79e86f7742d8b372e78",
+      "blacklisted": true
+    },
+    {
+      // BNTI Zhuk body armor (Digital Flora)
+      "itemId": "5c0e625a86f7742d77340f62",
+      "blacklisted": true
+    },
+    {
+      // FORT Defender-2 body armor
+      "itemId": "5e9dacf986f774054d6b89f4",
+      "blacklisted": true
+    },
+    {
+      // FORT Redut-M body armor
+      "itemId": "5ca2151486f774244a3b8d30",
+      "blacklisted": true
+    },
+    {
+      // IOTV Gen4 body armor (Assault Kit, MultiCam)
+      "itemId": "5b44cf1486f77431723e3d05",
+      "blacklisted": true
+    },
+    {
+      // IOTV Gen4 body armor (Full Protection Kit, MultiCam)
+      "itemId": "5b44cd8b86f774503d30cba2",
+      "blacklisted": true
+    },
+    {
+      // IOTV Gen4 body armor (High Mobility Kit, MultiCam)
+      "itemId": "5b44d0de86f774503d30cba8",
+      "blacklisted": true
+    },
+    {
+      // LBT-6094A Slick Plate Carrier (Black)
+      "itemId": "5e4abb5086f77406975c9342",
+      "blacklisted": true
+    },
+    {
+      // LBT-6094A Slick Plate Carrier (Coyote Tan)
+      "itemId": "6038b4b292ec1c3103795a0b",
+      "blacklisted": true
+    },
+    {
+      // LBT-6094A Slick Plate Carrier (Olive Drab)
+      "itemId": "6038b4ca92ec1c3103795a0d",
+      "blacklisted": true
+    },
+    {
+      // NPP KlASS Korund-VM body armor (Black)
+      "itemId": "5f5f41476bdad616ad46d631",
+      "blacklisted": true
+    },
+    {
+      // 5.11 Tactical TacTec plate carrier (Ranger Green)
+      "itemId": "5b44cad286f77402a54ae7e5",
+      "blacklisted": true
+    },
+    {
+      // Ars Arma A18 Skanda plate carrier (MultiCam)
+      "itemId": "5d5d87f786f77427997cfaef",
+      "blacklisted": true
+    },
+    {
+      // Ars Arma CPC MOD.1 plate carrier (A-TACS FG)
+      "itemId": "5e4ac41886f77406a511c9a8",
+      "blacklisted": true
+    },
+    {
+      // CQC Osprey MK4A plate carrier (Assault, MTP)
+      "itemId": "60a3c70cde5f453f634816a3",
+      "blacklisted": true
+    },
+    {
+      // CQC Osprey MK4A plate carrier (Protection, MTP)
+      "itemId": "60a3c68c37ea821725773ef5",
+      "blacklisted": true
+    },
+    {
+      // Crye Precision AVS plate carrier (Ranger Green)
+      "itemId": "544a5caa4bdc2d1a388b4568",
+      "blacklisted": true
+    },
+    {
+      // Crye Precision AVS plate carrier (Tagilla Edition)
+      "itemId": "609e860ebd219504d8507525",
+      "blacklisted": true
+    },
+    {
+      // Crye Precision CPC plate carrier (Goons Edition)
+      "itemId": "628b9c7d45122232a872358f",
+      "blacklisted": true
+    },
+    {
+      // S&S Precision PlateFrame plate carrier (Goons Edition)
+      "itemId": "628b9784bcf6e2659e09b8a2",
+      "blacklisted": true
+    },
+    {
+      // Shellback Tactical Banshee plate carrier (A-TACS AU)
+      "itemId": "639343fce101f4caa40a4ef3",
+      "blacklisted": true
+    },
+    {
+      // WARTECH TV-110 plate carrier (Coyote)
+      "itemId": "5c0e746986f7741453628fe5",
+      "blacklisted": true
+    },
+    {
+      // Diamond Age NeoSteel helmet ballistic mandible
+      "itemId": "6570a88c8f221f3b210353b7",
+      "blacklisted": true
+    },
+    {
+      // Galvion Caiman Hybrid Ballistic Mandible Guard
+      "itemId": "5f60c076f2bcbb675b00dac2",
+      "blacklisted": true
+    },
+    {
+      // Peltor ComTac 2 headset (OD Green)
+      "itemId": "5645bcc04bdc2d363b8b4572",
+      "blacklisted": true
+    },
+    {
+      // MSA Sordin Supreme PRO-X/L headset
+      "itemId": "5aa2ba71e5b5b000137b758f",
+      "blacklisted": true
+    },
+    {
+      // OPSMEN Earmor M32 headset
+      "itemId": "6033fa48ffd42c541047f728",
+      "blacklisted": true
+    },
+    {
+      // Ops-Core FAST RAC Headset
+      "itemId": "5a16b9fffcdbcb0176308b34",
+      "blacklisted": true
+    },
+    {
+      // Peltor ComTac 4 Hybrid headset (Coyote Brown)
+      "itemId": "628e4e576d783146b124c64d",
+      "blacklisted": true
+    },
+    {
+      // Walker's Razor Digital headset
+      "itemId": "5e4d34ca86f774264f758330",
+      "blacklisted": true
+    },
+    {
+      // Walker's XCEL 500BT Digital headset
+      "itemId": "5f60cd6cf2bcbb675b00dac6",
+      "blacklisted": true
+    },
+    {
+      // Documents case
+      "itemId": "590c60fc86f77412b13fddcf",
+      "blacklisted": true
+    },
+    {
+      // Dogtag case
+      "itemId": "5c093e3486f77430cb02e593",
+      "blacklisted": true
+    },
+    {
+      // Grenade case
+      "itemId": "5e2af55f86f7746d4159f07c",
+      "blacklisted": true
+    },
+    {
+      // Item case
+      "itemId": "59fb042886f7746c5005a7b2",
+      "blacklisted": true
+    },
+    {
+      // Key tool
+      "itemId": "59fafd4b86f7745ca07e1232",
+      "blacklisted": true
+    },
+    {
+      // S I C C organizational pouch
+      "itemId": "5d235bb686f77443f4331278",
+      "blacklisted": true
+    },
+    {
+      // Regular Weapon Case, I think it's too expensive at the 5 mil mark by default",
+      "itemId": "59fb023c86f7746d0d4b423c",
+      "blacklisted": true
+    },
+    {
+      // Lone Star TX-15 DML 5.56x45 carbine
+      "itemId": "5d43021ca4b9362eab4b5e25",
+      "blacklisted": true
+    },
+    {
+      // ASh-12 12.7x55 assault rifle
+      "itemId": "5cadfbf7ae92152ac412eeef",
+      "blacklisted": true
+    },
+    {
+      // Colt M4A1 5.56x45 assault rifle
+      "itemId": "5447a9cd4bdc2dbd208b4567",
+      "blacklisted": true
+    },
+    {
+      // DS Arms SA-58 7.62x51 assault rifle
+      "itemId": "5b0bbe4e5acfc40dc528a72d",
+      "blacklisted": true
+    },
+    {
+      // FN SCAR-H 7.62x51 assault rifle
+      "itemId": "6183afd850224f204c1da514",
+      "blacklisted": true
+    },
+    {
+      // SIG MCX .300 Blackout assault rifle
+      "itemId": "5fbcc1d9016cce60e8341ab3",
+      "blacklisted": true
+    },
+    {
+      // Desert Tech MDR 7.62x51 assault rifle
+      "itemId": "5dcbd56fdbd3d91b3e5468d5",
+      "blacklisted": true
+    },
+    {
+      // Rifle Dynamics RD-704 7.62x39 assault rifle
+      "itemId": "628a60ae6b1d481ff772e9c8",
+      "blacklisted": true
+    },
+    {
+      // FN SCAR-L 5.56x45 assault rifle (FDE)
+      "itemId": "618428466ef05c2ce828f218",
+      "blacklisted": true
+    },
+    {
+      // FN SCAR-L 5.56x45 assault rifle
+      "itemId": "6184055050224f204c1da540",
+      "blacklisted": true
+    },
+    {
+      // AS VAL 9x39 special assault rifle
+      "itemId": "57c44b372459772d2b39b8ce",
+      "blacklisted": true
+    },
+    {
+      // HK 416A5 5.56x45 assault rifle
+      "itemId": "5bb2475ed4351e00853264e3",
+      "blacklisted": true
+    },
+    {
+      // Desert Tech MDR 5.56x45 assault ri fle
+      "itemId": "5c488a752e221602b412af63",
+      "blacklisted": true
+    },
+    {
+      // HK G36 5.56x45 assault rifle
+      "itemId": "623063e994fc3f7b302a9696",
+      "blacklisted": true
+    },
+    {
+      // RPK-16 5.45x39 light machine gun
+      "itemId": "5beed0f50db834001c062b12",
+      "blacklisted": true
+    },
+    {
+      // Springfield Armory M1A 7.62x51 rifle
+      "itemId": "5aafa857e5b5b00018480968",
+      "blacklisted": true
+    },
+    {
+      // FN P90 5.7x28 submachine gun
+      "itemId": "5cc82d76e24e8d00134b4b83",
+      "blacklisted": true
+    },
+    {
+      // HK MP7A2 4.6x30 submachine gun
+      "itemId": "5bd70322209c4d00d7167b8f",
+      "blacklisted": true
+    },
+    {
+      // SIG MPX 9x19 submachine gun
+      "itemId": "58948c8e86f77409493f7266",
+      "blacklisted": true
+    },
+    {
+      // TDI KRISS Vector Gen.2 .45 ACP submachine gun
+      "itemId": "5fb64bc92b1b027b1f50bcf2",
+      "blacklisted": true
+    },
+    {
+      // TDI KRISS Vector Gen.2 9x19 submachine gun
+      "itemId": "5fc3f2d5900b1d5091531e57",
+      "blacklisted": true
+    },
+    {
+      // VOG-17 Khattabka improvised hand grenade
+      "itemId": "5e32f56fcb6d5863cc5e5ee4",
+      "blacklisted": true
+    },
+    {
+      // 40mm VOG-25 grenade
+      "itemId": "5656eb674bdc2d35148b457c",
+      "blacklisted": true
+    },
+    {
+      // VOG-25 Khattabka improvised hand grenade
+      "itemId": "5e340dcdcb6d5863cc5e5efb",
+      "blacklisted": true
+    },
+    {
+      // M.U.L.E. stimulant injector
+      "itemId": "5ed51652f6c34d2cc26336a1",
+      "blacklisted": true
+    },
+    {
+      // Surv12 field surgical kit
+      "itemId": "5d02797c86f774203f38e30a",
+      "blacklisted": true
+    },
+    {
+      // CMS surgical kit
+      "itemId": "5d02778e86f774203e7dedbe",
+      "blacklisted": true
+    },
+    {
+      // Grizzly medical kit
+      "itemId": "590c657e86f77412b013051d",
+      "blacklisted": true
+    },
+    {
+      // Salewa first aid kit
+      "itemId": "544fb45d4bdc2dee738b4568",
+      "blacklisted": true
+    },
+    {
+      // Body armor repair kit
+      "itemId": "591094e086f7747caa7bb2ef",
+      "blacklisted": true
+    },
+    {
+      // Weapon repair kit
+      "itemId": "5910968f86f77425cf569c32",
+      "blacklisted": true
+    },
+    {
+      // Old firesteel
+      "itemId": "5bc9c377d4351e3bac12251b",
+      "blacklisted": true
+    },
+    {
+      // Antique axe
+      "itemId": "5bc9c1e2d4351e00367fbcf0",
+      "blacklisted": true
+    },
+    {
+      // Glorious E lightweight armored mask
+      "itemId": "62a09e08de7ac81993580532",
+      "blacklisted": true
+    },
+    {
+      // Pestily plague mask
+      "itemId": "5e54f79686f7744022011103",
+      "blacklisted": true
+    },
+    {
+      // WZ Wallet
+      "itemId": "60b0f6c058e0b0481a09ad11",
+      "blacklisted": true
+    },
+    {
+      // Can of RatCola soda
+      "itemId": "60b0f93284c20f0feb453da7",
+      "blacklisted": true
+    },
+    {
+      // Veritas guitar pick
+      "itemId": "5f745ee30acaeb0d490d8c5b",
+      "blacklisted": true
+    },
+    {
+      // Kotton beanie
+      "itemId": "5bd073c986f7747f627e796c",
+      "blacklisted": true
+    },
+    {
+      // Jar of DevilDog mayo
+      "itemId": "5bc9b156d4351e00367fbce9",
+      "blacklisted": true
+    },
+    {
+      // #FireKlean gun lube
+      "itemId": "5bc9b355d4351e6d1509862a",
+      "blacklisted": true
+    },
+    {
+      // Golden 1GPhone smartphone
+      "itemId": "5bc9b720d4351e450201234b",
+      "blacklisted": true
+    },
+    {
+      // mask
+      "itemId": "5e54f76986f7740366043752",
+      "blacklisted": true
+    },
+    {
+      // Aquamari water bottle with filter
+      "itemId": "5c0fa877d174af02a012e1cf",
+      "blacklisted": true
+    },
+    {
+      // Bottle of "Norvinskiy Yadreniy" premium kvass (0.6L)
+      "itemId": "5e8f3423fd7471236e6e3b64",
+      "blacklisted": true
+    },
+    {
+      // Iskra ration pack
+      "itemId": "590c5d4b86f774784e1b9c45",
+      "blacklisted": true
+    },
+    {
+      // MRE ration pack
+      "itemId": "590c5f0d86f77413997acfab",
+      "blacklisted": true
+    },
+    {
+      // TP-200 TNT brick
+      "itemId": "60391b0fb847c71012789415",
+      "blacklisted": true
+    },
+    {
+      // C4Explosive
+      "itemId": "6636606320e842b50084e51a",
+      "blacklisted": true
+    },
+    {
+      // Dorm room 314 marked key
+      "itemId": "5780cf7f2459777de4559322",
+      "blacklisted": true
+    },
+    {
+      // Kiba Arms inner grate door key
+      "itemId": "5addaffe86f77470b455f900",
+      "blacklisted": true
+    },
+    {
+      // Kiba Arms outer door key
+      "itemId": "5ad5d7d286f77450166e0a89",
+      "blacklisted": true
+    },
+    {
+      // GP-34 40mm underbarrel grenade launcher
+      "itemId": "5648b62b4bdc2d9d488b4585",
+      "blacklisted": true
+    },
+    {
+      // Shturman's stash key
+      "itemId": "5d08d21286f774736e7c94c3",
+      "blacklisted": true
+    },
+    {
+      // Factory emergency exit key
+      "itemId": "5448ba0b4bdc2d02308b456c",
+      "blacklisted": true
+    },
+    {
+      // Tarcone Director's office key
+      "itemId": "5780d0532459777a5108b9a2",
+      "blacklisted": true
+    },
+    {
+      // ZB-014 key
+      "itemId": "591afe0186f77431bd616a11",
+      "blacklisted": true
+    },
+    {
+      // Cultist knife
+      "itemId": "5fc64ea372b0dd78d51159dc",
+      "blacklisted": true
+    },
+    {
+      // Magazine case
+      "itemId": "5c127c4486f7745625356c13",
+      "blacklisted": true
+    },
+    {
+      // Object #11SR keycard
+      "itemId": "5e42c81886f7742a01529f57",
+      "blacklisted": true
+    },
+    {
+      // Object #21WS keycard
+      "itemId": "5e42c83786f7742a021fdf3c",
+      "blacklisted": true
+    },
+    {
+      // TerraGroup Labs access keycard
+      "itemId": "5c94bbff86f7747ee735c08f",
+      "blacklisted": true
+    },
+    {
+      // Mystery Ranch NICE COMM 3 BVS frame system (Coyote)
+      "itemId": "628bc7fb408e2b2e9c0801b1",
+      "blacklisted": true
+    }
+  ]
+}

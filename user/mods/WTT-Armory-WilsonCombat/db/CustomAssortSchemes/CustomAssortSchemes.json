@@ -1,0 +1,107 @@
+{
+    "MECHANIC": {
+		"items": [
+			{
+				"_id": "663cfcae124a9e2463fcc435",
+				"_tpl": "663cf2baeb3d77e14be4fcb8",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  }, 
+			{
+				"_id": "663cf22657c0c72910de02ac",
+				"_tpl": "663cf1da2496a8e7b0b71759",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"StackObjectsCount": 99,
+					"Repairable": {
+						"MaxDurability": 100,
+						"Durability": 100
+					},
+					"FireMode": {
+						"FireMode": "single"
+					}
+				}
+			},
+            {
+				"_id": "663cf28d93e590178920f899",
+				"_tpl": "663cf2baeb3d77e14be4fcb8",
+				"parentId": "663cf22657c0c72910de02ac",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "663cf2914565191f731dbfc2",
+				"_tpl": "663cf411c5d5feff1b25419e",
+				"parentId": "663cf22657c0c72910de02ac",
+				"slotId": "mod_barrel"
+			},
+			{
+				"_id": "663cf2df4d8698ac017f4286",
+				"_tpl": "663cf2edb9aad1223a8f3be6",
+				"parentId": "663cf22657c0c72910de02ac",
+				"slotId": "mod_catch"
+			},
+			{
+				"_id": "663cf3c6fef8fff8384cec7f",
+				"_tpl": "663cf38456e3019763642e64",
+				"parentId": "663cf22657c0c72910de02ac",
+				"slotId": "mod_reciever"
+			},
+			{
+				"_id": "663cf3fb451c054a5392fa63",
+				"_tpl": "663cf442509df39323384184",
+				"parentId": "663cf3c6fef8fff8384cec7f",
+				"slotId": "mod_sight_rear"
+			},
+			{
+				"_id": "663cf4014a01945efd1fec12",
+				"_tpl": "663cf42c23f97fae3855361c",
+				"parentId": "663cf3c6fef8fff8384cec7f",
+				"slotId": "mod_sight_front"
+			},
+            {
+				"_id": "663cf2944929b64326120a32",
+				"_tpl": "663cf45b1004c6a00b96304b",
+				"parentId": "663cf22657c0c72910de02ac",
+				"slotId": "mod_pistol_grip"
+			},
+			{
+				"_id": "663cf481a2f8daa312f9cf4b",
+				"_tpl": "663cf485b3f099cff7175526",
+				"parentId": "663cf22657c0c72910de02ac",
+				"slotId": "mod_trigger"
+			},
+			{
+				"_id": "663cf4a21bba266420b9a5a5",
+				"_tpl": "663cf4a5156c382c1297331c",
+				"parentId": "663cf22657c0c72910de02ac",
+				"slotId": "mod_hammer"
+			}
+        ],
+        "barter_scheme": {
+			"663cf22657c0c72910de02ac": [
+				[
+					{
+						"count": 17500,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+			"663cfcae124a9e2463fcc435": [
+				[
+					{
+						"count": 2000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			]
+		},
+		"loyal_level_items": {
+			"663cf22657c0c72910de02ac": 1,
+			"663cfcae124a9e2463fcc435": 1
+		}
+    }
+}

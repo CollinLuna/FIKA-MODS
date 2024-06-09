@@ -329,4 +329,5 @@ export const BSGblacklist = [
 	"5df8a72c86f77412640e2e83", // Christmas tree ornament (Silver)
 	"5df8a6a186f77412640e2e80", // Christmas tree ornament (Red)
 	"59f32bb586f774757e1e8442", // Dogtag BEAR
+	"628bc7fb408e2b2e9c0801b1", // Mystery Ranch NICE COMM 3 BVS frame system (Coyote)
 ]
