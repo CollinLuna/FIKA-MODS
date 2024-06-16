@@ -1,7 +1,7 @@
 {
     "These are just basic examples, refer to documentation on mod page and existing item stats": {},
     "armor_piece_example [insert Id here]": {
-        "ItemID": "armor_piece_example [insert Id here]",
+        "ItemID": "[insert Id here]",
         "Name": "name of item, for clarity",
         "TemplateType [used to identify template, required]": "gear",
         "AllowADS [should it block aiming with stocked guns]": true,
@@ -19,7 +19,7 @@
         "Comfort [reduces the weight of items contained inside it, and itself, lower = better]": 0.95
     },
     "gear_example [insert Id here]": {
-        "ItemID": "gear_example [insert Id here]",
+        "ItemID": "[insert Id here]",
         "Name": "name of item, for clarity",
         "TemplateType [used to identify template, required]": "gear",
         "AllowADS [should it block aiming with stocked guns]": true,
@@ -27,18 +27,21 @@
         "speedPenaltyPercent [slows down movement]": -2,
         "mousePenalty [modifies mouse sensitivitiy]": 0,
         "weaponErgonomicPenalty [ergo penalty]": -5.5,
-        "Comfort [reduces the weight of items contained inside it, and itself, lower = better]": 0.95
-
+        "Comfort [reduces the weight of items contained inside it, and itself, lower = better]": 0.95,
+        "IsGasMask [only need to set it if it's a gasmask]": true,
+        "GasProtection [1 = full protection, 0.95 = 95% etc.]": 1,
+        "RadProtection [1 = full protection, 0.95 = 95% etc.]": 1,
+        "MaskToUse [which mask overlay to use, name of the .png file. Can make and add your own]": "gp5"
     },
     "ammo_example [insert Id here]": {
-        "ItemID": "ammo_example [insert Id here]",
+        "ItemID": "[insert Id here]",
         "Name": "name of item, for clarity",
         "TemplateType [used to identify template, required]": "ammo",
         "Damage": 50,
         "PenetrationPower": 60
     },
     "mod_example [insert Id here]": {
-        "ItemID": "mod_example [insert Id here]",
+        "ItemID": "[insert Id here]",
         "Name": "name of item, for clarity",
         "TemplateType [used to identify template, required]": "mod",
         "ModType [see mod page for details]": "booster",
@@ -71,7 +74,7 @@
         "MeleePen [for bayonets/muzzle strikes]": 8
     },
     "weapon_example [insert Id here]": {
-        "ItemID": "weapon_example [insert Id here]",
+        "ItemID": "[insert Id here]",
         "Name": "name of item, for clarity",
         "TemplateType [used to identify template, required]": "gun",
         "WeapType [see mod page for details]": "",
@@ -115,5 +118,11 @@
         "BaseFixSpeed [malf fix speed multi]": 1,
         "OffsetRotation [amount of deviation from original point of aim after firing]": 0.01,
         "RecoilIntensity [overal recoil intensity multiplier]": 0.2
+    },
+    "reskin_example [insert id here]": {
+        "ItemID": "[insert id here]",
+        "Name": "name of item, for clarity",
+        "TemplateID": "the id of the item this reskin is cloning, stats from Realism mod will be cloned",
+        "TemplateType": "[insert template type here]"
     }
 }

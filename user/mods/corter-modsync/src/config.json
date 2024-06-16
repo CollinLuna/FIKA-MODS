@@ -1,0 +1,3 @@
+{
+	"syncPaths": ["BepInEx/plugins", "BepInEx/config", "user/mods"]
+}

@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JsonHandler = void 0;
 const enums_1 = require("../utils/enums");
+const utils_1 = require("../utils/utils");
 const fs = require('fs');
 const path = require('path');
 const util = require('util');
@@ -51,10 +52,15 @@ class JsonHandler {
     constructor(tables, logger) {
         this.tables = tables;
         this.logger = logger;
+        this.gearPusherHelper = this.gearPusherHelper.bind(this);
+        this.ammoPusherHelper = this.ammoPusherHelper.bind(this);
+        this.modPusherHelper = this.modPusherHelper.bind(this);
+        this.weapPusherHelper = this.weapPusherHelper.bind(this);
     }
     itemDB() {
         return this.tables.templates.items;
     }
+    modifiedItems = {};
     pushModsToServer() {
         this.callHelper(MuzzleDeviceTemplates, this.itemDB(), this.modPusherHelper);
         this.callHelper(BarrelTemplates, this.itemDB(), this.modPusherHelper);
@@ -109,6 +115,13 @@ class JsonHandler {
         if (fileItem.ItemID in serverTemplates) {
             let serverItem = serverTemplates[fileItem.ItemID];
             let serverConfItems = serverItem._props.ConflictingItems;
+            if (serverConfItems.length > 0 && serverConfItems[0] === "SPTRM") {
+                return;
+            }
+            if (fileItem.TemplateID != undefined) {
+                fileItem = this.modifiedItems[fileItem.TemplateID];
+            }
+            this.modifiedItems[fileItem.ItemID] = fileItem;
             serverItem._props.speedPenaltyPercent = fileItem.speedPenaltyPercent;
             serverItem._props.mousePenalty = fileItem.mousePenalty;
             serverItem._props.weaponErgonomicPenalty = fileItem.weaponErgonomicPenalty;
@@ -127,9 +140,26 @@ class JsonHandler {
             if (serverItem._props?.ArmorMaterial != undefined) {
                 serverItem._props.ArmorMaterial = fileItem.ArmorMaterial != undefined ? fileItem.ArmorMaterial : serverItem._props.ArmorMaterial;
             }
+            if (serverItem._props?.Weight != undefined) {
+                serverItem._props.Weight = fileItem.Weight != undefined ? fileItem.Weight : serverItem._props.Weight;
+            }
+            if (fileItem?.IsGasMask != undefined && fileItem?.IsGasMask === true && fileItem?.MaskToUse !== undefined) {
+                serverItem._props.FaceShieldComponent = true;
+                serverItem._props.FaceShieldMask = "NoMask";
+            }
+            else if (fileItem?.MaskToUse !== undefined) {
+                serverItem._props.FaceShieldComponent = true;
+                serverItem._props.FaceShieldMask = "Narrow";
+            }
+            if (serverConfItems.length > 0 && serverConfItems[0] === "SPTRM") {
+                return;
+            }
+            if (fileItem.ItemID === "60363c0c92ec1c31037959f5" && utils_1.ModTracker.tgcPresent) {
+                fileItem.GasProtection = 0.95;
+            }
             let armorPropertyValues = ["SPTRM", fileItem?.AllowADS?.toString() || "true", fileItem?.ArmorClass?.toString() || "Unclassified", fileItem?.CanSpall?.toString() || "false", fileItem?.SpallReduction?.toString() || "1", fileItem?.ReloadSpeedMulti?.toString() || "1",
-                fileItem?.MinVelocity?.toString() || "500", fileItem?.MinKE?.toString() || "2000", fileItem?.MinPen?.toString() || "50", fileItem?.BlocksMouth?.toString() || "false", fileItem?.HasSideArmor?.toString() || "false", fileItem?.HasStomachArmor?.toString() || "false",
-                fileItem?.HasHitSecondaryArmor?.toString() || "false", fileItem?.HasNeckArmor?.toString() || "false", fileItem?.dB?.toString() || "1", fileItem?.Comfort?.toString() || 1, fileItem?.HasExtraArmor?.toString() || "false"];
+                fileItem?.MinVelocity?.toString() || "500", fileItem?.MinKE?.toString() || "2000", fileItem?.MinPen?.toString() || "50", fileItem?.BlocksMouth?.toString() || "false", fileItem?.HasSideArmor?.toString() || "false", fileItem?.RadProtection?.toString() || "0",
+                fileItem?.MaskToUse?.toString() || "", fileItem?.GasProtection?.toString() || "0", fileItem?.dB?.toString() || "1", fileItem?.Comfort?.toString() || 1, fileItem?.IsGasMask?.toString() || "false"];
             let combinedArr = armorPropertyValues.concat(serverConfItems);
             serverItem._props.ConflictingItems = combinedArr;
         }
@@ -147,6 +177,13 @@ class JsonHandler {
         if (fileItem.ItemID in serverTemplates) {
             let serverItem = serverTemplates[fileItem.ItemID];
             let serverConfItems = serverItem._props.ConflictingItems;
+            if (serverConfItems.length > 0 && serverConfItems[0] === "SPTRM") {
+                return;
+            }
+            if (fileItem.TemplateID != undefined) {
+                fileItem = this.modifiedItems[fileItem.TemplateID];
+            }
+            this.modifiedItems[fileItem.ItemID] = fileItem;
             serverItem._props.Ergonomics = fileItem.Ergonomics != undefined ? fileItem.Ergonomics : 0;
             serverItem._props.Accuracy = fileItem.Accuracy != undefined ? fileItem.Accuracy : 0;
             serverItem._props.CenterOfImpact = fileItem.CenterOfImpact != undefined ? fileItem.CenterOfImpact : 0.05;
@@ -183,6 +220,13 @@ class JsonHandler {
         if (fileItem.ItemID in serverTemplates) {
             let serverItem = serverTemplates[fileItem.ItemID];
             let serverConfItems = serverItem._props.ConflictingItems;
+            if (serverConfItems.length > 0 && serverConfItems[0] === "SPTRM") {
+                return;
+            }
+            if (fileItem.TemplateID != undefined) {
+                fileItem = this.modifiedItems[fileItem.TemplateID];
+            }
+            this.modifiedItems[fileItem.ItemID] = fileItem;
             if (modConfig.malf_changes == true) {
                 serverItem._props.BaseMalfunctionChance = fileItem.BaseMalfunctionChance;
                 serverItem._props.HeatFactorGun = fileItem.HeatFactorGun;
@@ -219,10 +263,11 @@ class JsonHandler {
                 serverItem._props.RecoilCategoryMultiplierHandRotation = fileItem.RecoilIntensity;
                 serverItem._props.CameraSnap = 1;
                 serverItem._props.RecoilCenter = fileItem.RecoilCenter != null && fileItem.RecoilCenter != undefined ? fileItem.RecoilCenter : serverItem._props.RecoilCenter;
+                serverItem._props.CanQueueSecondShot = fileItem.CanQueueSecondShot != null ? fileItem.CanQueueSecondShot : serverItem._props.CanQueueSecondShot;
                 if (fileItem?.weapFireType !== undefined) {
                     serverItem._props.weapFireType = fileItem.weapFireType;
                 }
-                if (fileItem?.WeapType !== undefined && fileItem.IsManuallyOperated == false && fileItem.OperationType !== "tubefed-m") {
+                if (fileItem?.WeapType !== undefined && (fileItem.IsManuallyOperated == false || fileItem.OperationType === "tubefed-m")) {
                     serverItem._props.CanQueueSecondShot = true;
                 }
                 let weapPropertyValues = ["SPTRM", fileItem?.WeapType?.toString() || "undefined", fileItem?.BaseTorque?.toString() || "0", fileItem?.HasShoulderContact?.toString() || "false", fileItem?.BaseReloadSpeedMulti?.toString() || "1", fileItem?.OperationType?.toString() || "undefined", fileItem?.WeapAccuracy?.toString() || "0",

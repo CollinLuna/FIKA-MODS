@@ -9,6 +9,6 @@
     },
     "server": {
         "giftedItemsLoseFIR": true,
-        "launcherListAllProfiles": false
+        "launcherListAllProfiles": true
     }
 }

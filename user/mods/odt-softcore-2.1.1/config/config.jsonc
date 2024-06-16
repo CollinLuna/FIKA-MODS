@@ -73,7 +73,7 @@
 	},
 	"EconomyOptions": {
 		// Master toggle for all economy options below
-		"enabled": false,
+		"enabled": true,
 		"Disable_Flea_Market_Completely": {
 			// Completely disable flea market for true HARDCORE experience. Still allows you to use the interface and see trader offers. Overwrites all other flea changes below.
 			"disable": false
@@ -94,12 +94,12 @@
 			"Enable_QuestKeys": {
 				// Random-only QUEST keys are available on flea. Uses hardcoded questKeys array.
 				"enabled": true,
-				"PriceMultiplier": 2
+				"PriceMultiplier": 3
 			},
 			"Enable_Marked_Keys": {
 				// Marked keys are available on flea market.
-				"enabled": false,
-				"PriceMultiplier": 2
+				"enabled": true,
+				"PriceMultiplier": 3
 			}
 		},
 		"Barter_Economy": {

@@ -13,8 +13,8 @@
     "VanillaScavs": false,
     "VanillaBosses": true,
     "VanillaFollowers": true,
-    "VanillaGoons": false,
-    "VanillaBloodHounds": false,
+    "VanillaGoons": true,
+    "VanillaBloodHounds": true,
     "VanillaRogues": true,
     "VanillaCultists": true
   },
@@ -159,7 +159,7 @@
     "MinLootValException": 1500000.0
   },
   "Mind": {
-    "GlobalAggression": 1.0,
+    "GlobalAggression": 1.2,
     "SneakyBots": true,
     "OnlySneakyPersonalitiesSneaky": false,
     "MaximumDistanceToBeSneaky": 80.0,
@@ -190,7 +190,7 @@
     "NoBushESPDebugMode": false
   },
   "Shoot": {
-    "GlobalScatterMultiplier": 0.85,
+    "GlobalScatterMultiplier": 0.9,
     "GlobalRecoilMultiplier": 0.66,
     "MaxRecoil": 2.0,
     "AddRecoil": -1.0,

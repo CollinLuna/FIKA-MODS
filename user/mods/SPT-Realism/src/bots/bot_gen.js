@@ -14,7 +14,6 @@ const arrays_1 = require("../utils/arrays");
 const bots_1 = require("./bots");
 // import { BotLootGen } from "./bot_loot_serv";
 const EquipmentSlots_1 = require("C:/snapshot/project/obj/models/enums/EquipmentSlots");
-const seasonalevents_1 = require("../misc/seasonalevents");
 const ModSpawn_1 = require("C:/snapshot/project/obj/models/enums/ModSpawn");
 const ExhaustableArray_1 = require("C:/snapshot/project/obj/models/spt/server/ExhaustableArray");
 const IFilterPlateModsForSlotByLevelResult_1 = require("C:/snapshot/project/obj/generators/IFilterPlateModsForSlotByLevelResult");
@@ -95,9 +94,10 @@ class BotGen extends BotGenerator_1.BotGenerator {
     }
     //skew the tiering of PMCs based on map
     botTierMapFactor(tier, utils) {
-        const hightier = ["rezervbase", "reservebase", "tarkovstreets"];
-        const midtier = ["factory4_night"];
-        const lowtier = ["bigmap", "customs", "interchange", "lighthouse"];
+        const highTier = ["rezervbase", "reservebase", "tarkovstreets"];
+        const midTier = ["factory4_night"];
+        const lowTier = ["bigmap", "customs", "interchange", "lighthouse"];
+        const ratTier = ["woods", "shoreline"];
         let rndNum = utils.pickRandNumOneInTen();
         if (utils_1.RaidInfoTracker.mapName === "sandbox") { //me being superstitious 
             return tier;
@@ -105,14 +105,17 @@ class BotGen extends BotGenerator_1.BotGenerator {
         if (utils_1.RaidInfoTracker.mapName === "laboratory") {
             tier = Math.min(tier + 2, 5);
         }
-        else if (rndNum <= 4 && hightier.includes(utils_1.RaidInfoTracker.mapName)) {
+        else if (rndNum <= 3 && highTier.includes(utils_1.RaidInfoTracker.mapName)) {
             tier = Math.min(tier + 1, 5);
         }
-        else if (rndNum <= 2 && (midtier.includes(utils_1.RaidInfoTracker.mapName) || utils_1.RaidInfoTracker.TOD === "night")) {
+        else if (rndNum <= 2 && (midTier.includes(utils_1.RaidInfoTracker.mapName) || utils_1.RaidInfoTracker.TOD === "night")) {
             tier = Math.min(tier + 1, 5);
         }
-        else if (rndNum <= 1 && lowtier.includes(utils_1.RaidInfoTracker.mapName)) {
+        else if (rndNum <= 1 && lowTier.includes(utils_1.RaidInfoTracker.mapName)) {
             tier = Math.min(tier + 1, 5);
+        }
+        else if (rndNum <= 3 && ratTier.includes(utils_1.RaidInfoTracker.mapName)) {
+            tier = Math.max(tier - 1, 1);
         }
         return tier;
     }
@@ -261,7 +264,7 @@ class BotGen extends BotGenerator_1.BotGenerator {
         const botEquipmentModPoolService = tsyringe_1.container.resolve("BotEquipmentModPoolService");
         const botEquipmentModGenerator = tsyringe_1.container.resolve("BotEquipmentModGenerator");
         const itemHelper = tsyringe_1.container.resolve("ItemHelper");
-        const seasonalEvents = new seasonalevents_1.SeasonalEventsHandler();
+        // const seasonalEvents = new SeasonalEventsHandler();
         const genBotLvl = new GenBotLvl(this.logger, this.randomUtil, this.databaseServer);
         const botInvGen = new BotInvGen(this.logger, this.hashUtil, this.randomUtil, this.databaseServer, botWeaponGenerator, botLootGenerator, botGeneratorHelper, this.botHelper, this.weightedRandomHelper, itemHelper, localisationService, botEquipmentModPoolService, botEquipmentModGenerator, this.configServer);
         const botRole = botGenerationDetails.role.toLowerCase();
@@ -427,10 +430,9 @@ class BotInvGen extends BotInventoryGenerator_1.BotInventoryGenerator {
                 randomisationDetails: randomistionDetails
             }, botRole, pmcTier);
         }
-        // Generate below in specific order
         this.myGenerateEquipment({
-            rootEquipmentSlot: EquipmentSlots_1.EquipmentSlots.HEADWEAR,
-            rootEquipmentPool: templateInventory.equipment.Headwear,
+            rootEquipmentSlot: EquipmentSlots_1.EquipmentSlots.FACE_COVER,
+            rootEquipmentPool: templateInventory.equipment.FaceCover,
             modPool: templateInventory.mods,
             spawnChances: equipmentChances,
             botRole: botRole,
@@ -439,9 +441,10 @@ class BotInvGen extends BotInventoryGenerator_1.BotInventoryGenerator {
             botEquipmentConfig: botEquipConfig,
             randomisationDetails: randomistionDetails
         }, botRole, pmcTier);
+        // Generate below in specific order
         this.myGenerateEquipment({
-            rootEquipmentSlot: EquipmentSlots_1.EquipmentSlots.FACE_COVER,
-            rootEquipmentPool: templateInventory.equipment.FaceCover,
+            rootEquipmentSlot: EquipmentSlots_1.EquipmentSlots.HEADWEAR,
+            rootEquipmentPool: templateInventory.equipment.Headwear,
             modPool: templateInventory.mods,
             spawnChances: equipmentChances,
             botRole: botRole,

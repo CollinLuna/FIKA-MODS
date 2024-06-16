@@ -312,7 +312,7 @@ class Mod {
                             isEncoded: false,
                             onlyFoundInRaid: false,
                             dynamicLocale: false,
-                            target: ["5857a8bc2459772bad15db29"],
+                            target: ["6389c85357baa773a825b356"],
                             value: 2,
                             visibilityConditions: [],
                         });
